@@ -1,16 +1,14 @@
-# This is a sample Python script.
+print("请输入身高（米）")
+height=input()
+print("请输入体重（千克）")
+weight=input()
+BMI=float(weight)/(float(height)*float(height))
+print("您的体重指数为: %r," %(BMI))
+if BMI<=18:
+  print("体重过低")
+elif BMI>18 and BMI<24:
+    print("体重正常")
+elif BMI>=24 and BMI<28:
+        print("超重")
+else:print("肥胖")
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
